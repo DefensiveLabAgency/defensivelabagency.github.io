@@ -2,7 +2,7 @@
 pages:
   stage: deploy
   script:
-  - echo 'Nothing to do...'
+  - echo 'Deploying our website is a very simple process as of writing: we simply use the content of public folder :)'
   artifacts:
     paths:
     - public
