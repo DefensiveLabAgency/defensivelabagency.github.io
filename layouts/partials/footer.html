@@ -1,0 +1,9 @@
+{{ $copyright := default "" .Site.Copyright }}
+{{ $colorScheme := default "light" .Site.Params.footer.colorScheme }}
+<hr>
+<footer class="blog-footer w-100 small text-muted">
+    <nav class="navbar navbar-{{ $colorScheme }} bg-{{ $colorScheme }}">
+        <p class="w-100 text-centerx">{{ $copyright }}</p>
+        <!-- <p class="w-100 text-centerx"><a href="#">{{ i18n "backToTop" }}</a></p> -->
+    </nav>
+</footer>

@@ -1,0 +1,33 @@
+baseURL = "http://example.org/"
+languageCode = "fr-FR"
+title = "Defensive Lab Agency"
+relativeURLs = true
+canonifyurls = true
+paginate = 25
+theme = "hugo-bootstrap"
+copyright = "Tous droits réservés, Defensive Lab Agency. 2019"
+
+[permalinks]
+  post = "/:year/:month/:title/"
+
+[params]
+  [params.header]
+    colorScheme = "white"
+
+  [params.footer]
+    colorScheme = "white"
+
+[[menu.main]]
+    name = "Accueil"
+    url = "/"
+    weight = 1
+
+[[menu.main]]
+    name = "Qui sommes-nous ?"
+    url = "/#qui-sommes-nous"
+    weight = 2
+
+[[menu.main]]
+    name = "Que faisons-nous ?"
+    url = "/#que-faisons-nous"
+    weight = 3
