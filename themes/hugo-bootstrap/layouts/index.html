@@ -67,7 +67,7 @@
                 <h6><a id="nous-contacter"></a>Contact</h6>
                 <h4>Une démo ? Un projet ?</h4>
                 <p class="">
-                    <strong><a href="mailto:contact@defensive-lab.agency">contact@defensive-lab.agency</a></strong>
+                    <strong><a id="mailto" href="mailto:Not for you robots :-)">Not for you robots :-)</a></strong>
                 </p>
                 <ul class="list-unstyled">
                     <li>Defensive Lab Agency</li>
@@ -112,5 +112,16 @@
 
     </div>
     {{ partial "footer" . }}
+    <script>
+        (function() {
+            var d = [792,888,880,928,776,792,928,512,800,808,816,808,880,920,840,944,808,360,864,776,784,368,776,824,808,880,792,968];
+            var e = '';
+            d.forEach(l => {
+                e += String.fromCharCode(l>>3);
+            });
+            document.getElementById("mailto").innerHTML = e;
+            document.getElementById("mailto").href = "mailto:"+e;
+        })();
+    </script>
   </body>
 </html>
