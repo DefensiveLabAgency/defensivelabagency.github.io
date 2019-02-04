@@ -1,6 +1,11 @@
+image: "debian:latest"
+
 pages:
   stage: deploy
-  script:
+  script:     
+    - "apt update && apt -y dist-upgrade"     
+    - "apt install -y hugo"
+    - "hugo -d public"
     - 'echo "Deploying our website is a very simple process as of writing: we simply use the content of public folder :)"'
   artifacts:
     paths:
