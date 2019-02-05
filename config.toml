@@ -1,4 +1,4 @@
-baseURL = "http://example.org/"
+baseURL = "https://defensive-lab.agency/"
 languageCode = "fr-FR"
 title = "Defensive Lab Agency"
 relativeURLs = true
@@ -11,6 +11,7 @@ copyright = "Tous droits réservés, Defensive Lab Agency. 2019"
   post = "/:year/:month/:title/"
 
 [params]
+  description = "Cabinet de recherche et développement et de conseil en cybersécurité."
   [params.header]
     colorScheme = "white"
 
