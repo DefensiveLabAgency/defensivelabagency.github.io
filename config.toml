@@ -12,7 +12,7 @@ copyright = "Tous droits réservés, Defensive Lab Agency. 2019"
 
 [params]
   description = "Cabinet de recherche et développement et de conseil en cybersécurité."
-  images = ["/img/icon.png"]
+  images = ["/img/card.png"]
   [params.header]
     colorScheme = "white"
 
