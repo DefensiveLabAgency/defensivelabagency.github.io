@@ -33,3 +33,8 @@ copyright = "Tous droits réservés, Defensive Lab Agency. 2019"
     name = "Que faisons-nous ?"
     url = "/#que-faisons-nous"
     weight = 3
+
+[[menu.main]]
+    name = "Suivre notre actualité"
+    url = "/#suivre-notre-actualité"
+    weight = 4
