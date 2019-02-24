@@ -1,17 +1,18 @@
 baseURL = "https://defensive-lab.agency/"
-languageCode = "fr-FR"
+languageCode = "en-us"
 title = "Defensive Lab Agency"
 relativeURLs = true
 canonifyurls = true
 paginate = 25
 theme = "hugo-bootstrap"
+defaultContentLanguageInSubdir= true
 
 [languages]
   [languages.en]
     languageName = "English"
     weight = 1
     copyright = "All rights reserved, Defensive Lab Agency. 2019"
-    description = "ENNNN Cabinet de conseil, de recherche et développement en cybersécurité."
+    description = "Consultancy, research and development in cybersecurity."
     [[languages.en.menu.main]]
         name = "Home"
         url = "/"
