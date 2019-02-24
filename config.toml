@@ -5,36 +5,58 @@ relativeURLs = true
 canonifyurls = true
 paginate = 25
 theme = "hugo-bootstrap"
-copyright = "Tous droits réservés, Defensive Lab Agency. 2019"
+
+[languages]
+  [languages.en]
+    languageName = "English"
+    weight = 1
+    copyright = "All rights reserved, Defensive Lab Agency. 2019"
+    description = "ENNNN Cabinet de conseil, de recherche et développement en cybersécurité."
+    [[languages.en.menu.main]]
+        name = "Home"
+        url = "/"
+        weight = 1
+    [[languages.en.menu.main]]
+        name = "Who we are"
+        url = "/#qui-sommes-nous"
+        weight = 2
+    [[languages.en.menu.main]]
+        name = "What we do"
+        url = "/#que-faisons-nous"
+        weight = 3
+    [[languages.en.menu.main]]
+        name = "Keep in touch"
+        url = "/#suivre-notre-actualité"
+        weight = 4
+  [languages.fr]
+    languageName = "Français"
+    weight = 2
+    copyright = "Tous droits réservés, Defensive Lab Agency. 2019"
+    description = "Cabinet de conseil, de recherche et développement en cybersécurité."
+    [[languages.fr.menu.main]]
+        name = "Accueil"
+        url = "/fr/"
+        weight = 1
+    [[languages.fr.menu.main]]
+        name = "Qui sommes-nous ?"
+        url = "/fr/#qui-sommes-nous"
+        weight = 2
+    [[languages.fr.menu.main]]
+        name = "Que faisons-nous ?"
+        url = "/fr/#que-faisons-nous"
+        weight = 3
+    [[languages.fr.menu.main]]
+        name = "Suivre notre actualité"
+        url = "/fr/#suivre-notre-actualité"
+        weight = 4
 
 [permalinks]
   post = "/:year/:month/:title/"
 
 [params]
-  description = "Cabinet de recherche et développement et de conseil en cybersécurité."
   images = ["/img/card.png"]
   [params.header]
     colorScheme = "white"
 
   [params.footer]
     colorScheme = "white"
-
-[[menu.main]]
-    name = "Accueil"
-    url = "/"
-    weight = 1
-
-[[menu.main]]
-    name = "Qui sommes-nous ?"
-    url = "/#qui-sommes-nous"
-    weight = 2
-
-[[menu.main]]
-    name = "Que faisons-nous ?"
-    url = "/#que-faisons-nous"
-    weight = 3
-
-[[menu.main]]
-    name = "Suivre notre actualité"
-    url = "/#suivre-notre-actualité"
-    weight = 4
