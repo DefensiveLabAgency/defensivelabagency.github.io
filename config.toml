@@ -30,7 +30,7 @@ defaultContentLanguageInSubdir= true
         url = "/en/#suivre-notre-actualité"
         weight = 4
     [[languages.en.menu.main]]
-        name = "Product & Services"
+        name = "Products & Services"
         url = "/en/products-services"
         weight = 5
   [languages.fr]
@@ -55,7 +55,7 @@ defaultContentLanguageInSubdir= true
         url = "/fr/#suivre-notre-actualité"
         weight = 4
     [[languages.fr.menu.main]]
-        name = "Produit & Services"
+        name = "Produits & Services"
         url = "/fr/products-services"
         weight = 5
 
