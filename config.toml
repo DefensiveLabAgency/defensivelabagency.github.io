@@ -16,20 +16,24 @@ enableRobotsTXT = true
     description = "Consultancy, research and development in cybersecurity."
     [[languages.en.menu.main]]
         name = "Home"
-        url = "/"
+        url = "/en/"
         weight = 1
     [[languages.en.menu.main]]
         name = "Who we are"
-        url = "/#qui-sommes-nous"
+        url = "/en/#qui-sommes-nous"
         weight = 2
     [[languages.en.menu.main]]
         name = "What we do"
-        url = "/#que-faisons-nous"
+        url = "/en/#que-faisons-nous"
         weight = 3
     [[languages.en.menu.main]]
         name = "Keep in touch"
-        url = "/#suivre-notre-actualité"
+        url = "/en/#suivre-notre-actualité"
         weight = 4
+    [[languages.en.menu.main]]
+        name = "Products & Services"
+        url = "/en/products-services"
+        weight = 5
   [languages.fr]
     languageName = "Français"
     weight = 2
@@ -51,6 +55,10 @@ enableRobotsTXT = true
         name = "Suivre notre actualité"
         url = "/fr/#suivre-notre-actualité"
         weight = 4
+    [[languages.fr.menu.main]]
+        name = "Produits & Services"
+        url = "/fr/products-services"
+        weight = 5
 
 [permalinks]
   post = "/:year/:month/:title/"
@@ -62,3 +70,8 @@ enableRobotsTXT = true
 
   [params.footer]
     colorScheme = "white"
+  [params.widgets]
+    recent_articles = false
+    categories = false
+    tags = false
+    tag_cloud = false
