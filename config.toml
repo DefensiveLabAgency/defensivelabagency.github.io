@@ -34,6 +34,10 @@ enableRobotsTXT = true
         name = "Products & Services"
         url = "/en/products-services"
         weight = 5
+    [[languages.en.menu.main]]
+        name = "Blog"
+        url = "/en/post"
+        weight = 6
   [languages.fr]
     languageName = "Français"
     weight = 2
@@ -59,6 +63,10 @@ enableRobotsTXT = true
         name = "Produits & Services"
         url = "/fr/products-services"
         weight = 5
+    [[languages.fr.menu.main]]
+        name = "Blog"
+        url = "/fr/post"
+        weight = 6
 
 [permalinks]
   post = "/:year/:month/:title/"
@@ -70,8 +78,9 @@ enableRobotsTXT = true
 
   [params.footer]
     colorScheme = "white"
+
   [params.widgets]
-    recent_articles = false
-    categories = false
+    recent_articles = true
+    categories = true
     tags = false
     tag_cloud = false
