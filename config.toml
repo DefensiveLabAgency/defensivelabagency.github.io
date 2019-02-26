@@ -64,12 +64,12 @@ enableRobotsTXT = true
         url = "/fr/products-services"
         weight = 5
     [[languages.fr.menu.main]]
-        name = " "
+        name = "Blog"
         url = "/fr/post"
         weight = 6
 
 [permalinks]
-  post = "/:year/:month/:title/"
+  post = "/:year/:month/:slug/"
 
 [params]
   images = ["/img/card.png"]
