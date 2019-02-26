@@ -108,7 +108,7 @@ body {
 .blog-post img {
   max-width: 100%;
 }
-.blog-post a {
+article.blog-post a {
   text-decoration: underline;
 }
 .navbar-toggler-icon {
