@@ -69,7 +69,7 @@ enableRobotsTXT = true
         weight = 6
 
 [permalinks]
-  post = "/:year/:month/:title/"
+  post = "/:year/:month/:slug/"
 
 [params]
   images = ["/img/card.png"]
