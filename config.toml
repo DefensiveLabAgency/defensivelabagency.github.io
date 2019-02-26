@@ -35,7 +35,7 @@ enableRobotsTXT = true
         url = "/en/products-services"
         weight = 5
     [[languages.en.menu.main]]
-        name = "Blog"
+        name = " "
         url = "/en/post"
         weight = 6
   [languages.fr]
@@ -64,7 +64,7 @@ enableRobotsTXT = true
         url = "/fr/products-services"
         weight = 5
     [[languages.fr.menu.main]]
-        name = "Blog"
+        name = " "
         url = "/fr/post"
         weight = 6
 
