@@ -119,3 +119,28 @@ h6 {
   color: #985e6d;
   font-weight: bold;
 }
+
+div[onclick] {
+  cursor: pointer;
+}
+
+.highlight-anchor:target {
+  padding-top: 15rem;
+  padding-bottom: 15rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 100vh;
+}
+
+.btn-primary {
+  box-shadow: 0 1px 3px #985e6d
+}
+
+@media (min-width: 769px) and (max-width: 1199px) {
+    body form.mj-form {
+      overflow: hidden;
+    }
+  }

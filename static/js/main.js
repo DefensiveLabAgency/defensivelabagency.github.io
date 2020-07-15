@@ -5,6 +5,22 @@
     d.forEach(l => {
         e += String.fromCharCode(l>>3);
     });
-    document.getElementById("mailto").innerHTML = e;
-    document.getElementById("mailto").href = "mailto:"+e;
+    let el = document.getElementById("mailto")
+    if(el) {
+        var linkText = el.dataset['text']
+        el.innerHTML = linkText ? linkText : e;
+        el.href = "mailto:"+e;
+    }
+    
+
+    for(let i=0; i < document.getElementsByClassName("mailto").length; i++) { 
+        let el = document.getElementsByClassName("mailto")[i]
+        var linkText = el.dataset['text']
+        var subjectText = el.dataset['subject']
+        el.innerHTML = linkText ? linkText : e;
+        el.href = "mailto:"+e;
+        if(subjectText) {
+            el.href += `?subject=${subjectText}`
+        }
+    }
 })();
