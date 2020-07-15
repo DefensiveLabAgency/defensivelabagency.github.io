@@ -1,4 +1,5 @@
 baseURL = "https://defensive-lab.agency/"
+#baseURL = "https://public.legeox.net/dla-website-dev/"
 languageCode = "en-us"
 title = "Defensive Lab Agency"
 relativeURLs = true
@@ -31,8 +32,12 @@ enableRobotsTXT = true
         url = "/en/#suivre-notre-actualité"
         weight = 4
     [[languages.en.menu.main]]
-        name = "Products & Services"
-        url = "/en/products-services"
+        name = "Products"
+        url = "/en/products"
+        weight = 5
+    [[languages.en.menu.main]]
+        name = "Services"
+        url = "/en/products-services" #"/en/products"
         weight = 5
     [[languages.en.menu.main]]
         name = " "
@@ -55,13 +60,17 @@ enableRobotsTXT = true
         name = "Que faisons-nous ?"
         url = "/fr/#que-faisons-nous"
         weight = 3
+    #[[languages.fr.menu.main]]
+    #    name = "Suivre notre actualité"
+    #    url = "/fr/#suivre-notre-actualité"
+    #    weight = 4
     [[languages.fr.menu.main]]
-        name = "Suivre notre actualité"
-        url = "/fr/#suivre-notre-actualité"
+        name = "Produits"
+        url = "/fr/products"
         weight = 4
     [[languages.fr.menu.main]]
-        name = "Produits & Services"
-        url = "/fr/products-services"
+        name = "Services"
+        url = "/fr/products-services" #"/fr/services"
         weight = 5
     [[languages.fr.menu.main]]
         name = "Blog"
