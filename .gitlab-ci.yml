@@ -5,9 +5,10 @@ pages:
   script:     
     - "apt update && apt -y dist-upgrade"
     - "apt install wget -y"
-    - "wget https://github.com/gohugoio/hugo/releases/download/v0.54.0/hugo_0.54.0_Linux-64bit.deb -O hugo.deb"
-    - "dpkg -i hugo.deb"
-    - "rm -f hugo.deb"
+    - "apt install hugo -y"
+    #- "wget https://github.com/gohugoio/hugo/releases/download/v0.54.0/hugo_0.54.0_Linux-64bit.deb -O hugo.deb"
+    #- "dpkg -i hugo.deb"
+    #- "rm -f hugo.deb"
     - "hugo version"
     - "hugo -s $CI_PROJECT_DIR/ -d $CI_PROJECT_DIR/public"
     - 'echo "Deploying our website is a very simple process as of writing: we simply use the content of public folder :)"'
