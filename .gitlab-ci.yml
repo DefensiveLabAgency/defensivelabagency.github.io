@@ -12,8 +12,9 @@ pages:
     - "hugo version"
     - "hugo -s $CI_PROJECT_DIR/ -d $CI_PROJECT_DIR/public"
     - 'echo "Deploying our website is a very simple process as of writing: we simply use the content of public folder :)"'
+    - "ls $CI_PROJECT_DIR/public"
   artifacts:
     paths:
-      - public
+      - "$CI_PROJECT_DIR/public" #public
   only:
     - master
