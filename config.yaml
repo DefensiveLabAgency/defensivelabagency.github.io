@@ -1,0 +1,27 @@
+baseURL: "https://defensive-lab.agency/"
+languageCode: "en-us"
+title: "Defensive Lab Agency"
+relativeURLs: true
+canonifyurls: true
+paginate: 25
+theme: "bare"
+defaultContentLanguageInSubdir: true
+enableRobotsTXT: true
+disableKinds:
+- taxonomy
+- taxonomyTerm
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+
+permalinks:
+  post: "/:year/:month/:slug/"
+
+params:
+  openGraph: true
+  description: 
+  include_footer: true
+  navbarlogo:
+    image: logos/logo_without_text.svg
+    link: /

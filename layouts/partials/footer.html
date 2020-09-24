@@ -1,12 +1,28 @@
-{{ $copyright := default "" .Site.Copyright }}
-{{ $colorScheme := default "light" .Site.Params.footer.colorScheme }}
-<footer class="blog-footer w-100 small text-muted mt-auto">
-    <nav class="navbar navbar-{{ $colorScheme }} bg-light">
-        <p class="w-100 text-centerx">{{ $copyright }}</p>
-        <!-- <p class="w-100 text-centerx"><a href="#">{{ i18n "backToTop" }}</a></p> -->
-    </nav>
+<footer class="footer has-text-centered">
+    <div class="container">
+    <div class="columns">
+        <div class="column is-8-desktop is-offset-2-desktop">
+        <p>
+            <strong class="has-text-weight-semibold">
+            Defensive Lab Agency SAS
+            </strong>
+        </p>
+        <p class="is-size-7">
+            31 avenue de Ségur<br>
+            75007 Paris
+        </p>
+        </div>
+    </div>
+    </div>
 </footer>
-<script src="{{ "js/jquery.min.js" | relURL }}"></script>
-<script src="{{ "js/popper.min.js" | relURL }}"></script>
-<script src="{{ "js/bootstrap.min.js" | relURL }}"></script>
-<script src="{{ "js/main.js" | relURL }}"></script>
+{{ $js := resources.Get "js/jquery.js" | minify }}
+{{ $secureJS := $js | resources.Fingerprint "sha512" }}
+<script type="text/javascript" src="{{ $secureJS.Permalink }}" integrity="{{ $secureJS.Data.Integrity }}"></script>
+
+{{ $js := resources.Get "js/main.js" | minify }}
+{{ $secureJS := $js | resources.Fingerprint "sha512" }}
+<script type="text/javascript" src="{{ $secureJS.Permalink }}" integrity="{{ $secureJS.Data.Integrity }}"></script>
+
+{{ $js := resources.Get "js/matomo.js" | minify }}
+{{ $secureJS := $js | resources.Fingerprint "sha512" }}
+<script type="text/javascript" src="{{ $secureJS.Permalink }}" integrity="{{ $secureJS.Data.Integrity }}"></script>

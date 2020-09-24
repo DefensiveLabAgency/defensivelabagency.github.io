@@ -75,4 +75,3 @@ Ainsi, d'après nos analyses de la version 2.12.13 (le hash SHA256 de l'APK est 
 
 Ces observations ne sont qu'un aspect. Mais alors, quid du RGPD et de la responsabilité des magasins applicatifs ? Après tout, si nous lisons la [Politique de confidentialité de *BetterMe*](https://betterme.tips/privacy.html) par exemple, nous constatons que la société éditrice des applications de la famille *BetterMe* est de droit privé chypriote. Chypre étant un État-membre de l'UE, le RGPD s'applique. Or, la Politique de confidentialité que nous avons analysée, ne semble pas refléter les exigences du RGPD.
 
-Mais nous en parlerons au prochain épisode ! D'ici là, n'oubliez pas de [vous abonner à notre lettre d'information](https://defensive-lab.agency/fr/#suivre-notre-actualit%C3%A9) (si ce n'est pas déjà fait).  
