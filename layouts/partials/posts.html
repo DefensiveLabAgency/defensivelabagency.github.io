@@ -1,0 +1,34 @@
+<div class="posts">
+  {{ range . }}
+  <div class="post">
+    <div><a href="{{.Permalink }}" class="title is-size-4">{{ .Title }}</a></div>
+    <div class="subtitle ">
+      <span class="is-size-7">{{ .Date.Format "January 02, 2006" }}</span>
+      <span class="">
+        {{ if .Param "tags" }}
+        {{ range .Param "tags" }}
+        {{ $name := . }}
+        <span class="tag is-light is-primary is-normal is-licnk">{{ $name }}</span>
+        {{ end }}
+        {{ end }}
+      </span>
+    </div>
+    <div class="is-size-6 mt-2 mb-6">
+      <article class="message is-italic">
+        <div class="message-body">
+          {{ .Summary }}
+        </div>
+      </article>
+      
+      <div class="mt-2 has-text-right">
+        <a href="{{.Permalink }}">
+          <span class="button is-primary is-rounded is-small">
+            Read more
+          </span>
+        </a>
+      </div>
+    </div>
+    
+  </div>
+  {{ end }}
+</div>

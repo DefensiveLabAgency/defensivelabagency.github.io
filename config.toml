@@ -1,95 +1,18 @@
 baseURL = "https://defensive-lab.agency/"
-#baseURL = "https://public.legeox.net/dla-website-dev/"
 languageCode = "en-us"
 title = "Defensive Lab Agency"
 relativeURLs = true
 canonifyurls = true
 paginate = 25
-theme = "hugo-bootstrap"
+theme = "bare"
 defaultContentLanguageInSubdir= true
 enableRobotsTXT = true
 
-[languages]
-  [languages.en]
-    languageName = "English"
-    weight = 1
-    copyright = "All rights reserved, Defensive Lab Agency. 2019-2020"
-    description = "Consultancy, research and development in cybersecurity."
-    [[languages.en.menu.main]]
-        name = "Home"
-        url = "/en/"
-        weight = 1
-    [[languages.en.menu.main]]
-        name = "Who we are"
-        url = "/en/#qui-sommes-nous"
-        weight = 2
-    [[languages.en.menu.main]]
-        name = "What we do"
-        url = "/en/#que-faisons-nous"
-        weight = 3
-    [[languages.en.menu.main]]
-        name = "Keep in touch"
-        url = "/en/#suivre-notre-actualité"
-        weight = 4
-    [[languages.en.menu.main]]
-        name = "Products"
-        url = "/en/products"
-        weight = 5
-    [[languages.en.menu.main]]
-        name = "Services"
-        url = "/en/products-services" #"/en/products"
-        weight = 5
-    [[languages.en.menu.main]]
-        name = " "
-        url = "/en/post"
-        weight = 6
-  [languages.fr]
-    languageName = "Français"
-    weight = 2
-    copyright = "Tous droits réservés, Defensive Lab Agency. 2019-2020"
-    description = "Cabinet de conseil, de recherche et développement en cybersécurité."
-    [[languages.fr.menu.main]]
-        name = "Accueil"
-        url = "/fr/"
-        weight = 1
-    [[languages.fr.menu.main]]
-        name = "Qui sommes-nous ?"
-        url = "/fr/#qui-sommes-nous"
-        weight = 2
-    [[languages.fr.menu.main]]
-        name = "Que faisons-nous ?"
-        url = "/fr/#que-faisons-nous"
-        weight = 3
-    #[[languages.fr.menu.main]]
-    #    name = "Suivre notre actualité"
-    #    url = "/fr/#suivre-notre-actualité"
-    #    weight = 4
-    [[languages.fr.menu.main]]
-        name = "Produits"
-        url = "/fr/products"
-        weight = 4
-    [[languages.fr.menu.main]]
-        name = "Services"
-        url = "/fr/products-services" #"/fr/services"
-        weight = 5
-    [[languages.fr.menu.main]]
-        name = "Blog"
-        url = "/fr/post"
-        weight = 6
+
 
 [permalinks]
   post = "/:year/:month/:slug/"
 
 [params]
-  images = ["/img/card.png"]
-  [params.header]
-    colorScheme = "white"
-
-  [params.footer]
-    colorScheme = "white"
-
-  [params.widgets]
-    recent_articles = true
-    categories = true
-    tags = false
-    tag_cloud = false
+mainSections = ["post"]
+author = "Defensive Lab Agency"
