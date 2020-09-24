@@ -5,7 +5,7 @@ relativeURLs = true
 canonifyurls = true
 paginate = 25
 theme = "bare"
-defaultContentLanguageInSubdir= true
+defaultContentLanguageInSubdir= false
 enableRobotsTXT = true
 
 
