@@ -7,7 +7,7 @@ slug: "finspy-android"
 ---
 
 
-We have collaborated with Amnesty International for whom we have analyzed a new variant of the FinSpy spyware.
+We have collaborated with [Amnesty International](https://www.amnesty.org/en/latest/research/2020/09/german-made-finspy-spyware-found-in-egypt-and-mac-and-linux-versions-revealed/) for whom we have analyzed a new variant of the FinSpy spyware.
 
 {{< summary >}}
 
