@@ -1323,7 +1323,7 @@ The implant can use both SMS and HTTP requests to send collected data to the com
 {{< fig src="img/self_desctruct_and_priv.png" caption="FinSpy self-destruct script generation" >}}
 
 Since FinSpy has the ability to remove itself, it generates a shell script `/system/etc/xrebuild.sh` listed below.
-```
+```bash
 #!/system/bin/sh
 mount -o rw,remount /system
 am force-stop <package name>

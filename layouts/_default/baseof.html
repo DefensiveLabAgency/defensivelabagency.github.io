@@ -17,6 +17,9 @@
   {{ $css := resources.Get "css/animate.min.css" | minify }}
   {{ $secureCSS := $css | resources.Fingerprint "sha512" }}
   <link rel="stylesheet" href="{{ $secureCSS.Permalink }}" integrity="{{ $secureCSS.Data.Integrity }}">
+  {{ $css := resources.Get "css/syntax.css" | minify }}
+  {{ $secureCSS := $css | resources.Fingerprint "sha512" }}
+  <link rel="stylesheet" href="{{ $secureCSS.Permalink }}" integrity="{{ $secureCSS.Data.Integrity }}">
 
   <link rel="icon" type="image/png" href="/images/favicon.png">
   <link rel="canonical" href="{{ .Permalink }}">
