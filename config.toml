@@ -8,6 +8,10 @@ theme = "bare"
 defaultContentLanguageInSubdir= false
 enableRobotsTXT = true
 
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
 
 
 [permalinks]
