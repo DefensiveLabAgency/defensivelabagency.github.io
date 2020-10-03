@@ -4,7 +4,7 @@ pages:
   stage: deploy
   script:     
     - "apt update && apt -y dist-upgrade"
-    - "apt install wget -y"
+    - "apt install wget python-pygments python3-pygments -y"
     - "apt install hugo -y"
     #- "wget https://github.com/gohugoio/hugo/releases/download/v0.54.0/hugo_0.54.0_Linux-64bit.deb -O hugo.deb"
     #- "dpkg -i hugo.deb"
