@@ -14,6 +14,7 @@ This guide is written and maintained by [Esther Onfroy](https://twitter.com/U039
 People are struggling to analyze iOS devices due to the complexity of the procedure on Linux. We have decided to use Docker because latest versions of iOS require the use of a version of `libimobiledevice` which is not available on Linux yet. We use `libimobiledevice` to backup the iOS device instead of using iTunes.
 
 This guide has been successfully tested on Ubuntu 20.04 with:
+
 * iOS 13.5.1
 * iOS 14.5
 * iOS 14.7
