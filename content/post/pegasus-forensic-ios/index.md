@@ -130,6 +130,7 @@ exit
 
 ##### 17. Save the outputs
 If you want to keep the files generated during the forensic procedure, backup the following folders:
+
 * `backup` containing the iOS backup
 * `decrypted` containing the decrypted backup
 * `checked` containing the results of MVT analysis
