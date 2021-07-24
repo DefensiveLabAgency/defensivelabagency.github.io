@@ -50,7 +50,7 @@ If you want to learn more about the IOC, check [the Amnesty Tech repository](htt
 
 ##### 4. Retrieve the Dockerfile
 ```bash
-wget https://gist.githubusercontent.com/U039b/3ad88e2286de99a15409f9a869c92c89/raw/634599bc1fe855683904d2a7bbddc44a2d8286c7/Dockerfile -O Dockerfile
+wget https://raw.githubusercontent.com/mvt-project/mvt/main/Dockerfile -O Dockerfile
 ```
 
 ##### 5. Build the Docker image
