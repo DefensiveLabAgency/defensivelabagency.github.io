@@ -1,5 +1,5 @@
 {
-  "name": "DLA website",
+  "name": "@dla/website",
   "browserslist": [
     "defaults"
   ],
