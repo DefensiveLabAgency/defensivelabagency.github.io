@@ -1,0 +1,43 @@
+name: iDLA website CI
+
+on:
+  push:
+    branches: main
+  pull_request:
+    branches: main
+
+jobs:
+  build:
+    runs-on: ${{ matrix.os }}
+
+    strategy:
+      matrix:
+        os: [ubuntu-latest]
+        node: [14.x]
+
+    steps:
+    - name: Check out 🛎️
+      uses: actions/checkout@v2
+
+    - name: Set up Node.js ${{ matrix.node }} 🔧
+      uses: actions/setup-node@v2
+      with:
+        node-version: ${{ matrix.node }}
+
+    - name: Install dependencies 🔧
+      run: npm ci
+
+    - name: Build production website 🔧
+      run: npm run build
+
+    - name: Build Hugo website 🔧
+      uses: jakejarvis/hugo-build-action@master
+      with:
+        args: --minify
+
+    - name: Deploy 🚀
+      uses: JamesIves/github-pages-deploy-action@v4.2.5
+      with:
+        branch: gh-pages # The branch the action should deploy to.
+        folder: public # The folder the action should deploy.     
+
