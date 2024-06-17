@@ -1,11 +1,11 @@
 <section class="section portfolio">
-  <div class="container">
+  <div class="container-fluid">
     {{ range .content }}
     <div class="row justify-content-center d-flex align-items-center">
       <div class="col-12 text-center">
         <h3 id="projects" class="fs-1 text-primary">Our project</h3>
       </div>
-      <div class="col-8 text-start">
+      <div class="col-sm-12 col-lg-10 text-start">
         {{ with .pretitle }}
           <p class="text-danger mb-2">{{ . }}</p>
         {{ end }}
@@ -21,7 +21,7 @@
           {{ end }}
         </div>
       </div>
-      <div class="col-4 text-start">
+      <div class="col-sm-4 col-lg-4 text-start">
         {{ with .image }}
           <img src="{{ . }}" class="image-fluid">
         {{ end }}

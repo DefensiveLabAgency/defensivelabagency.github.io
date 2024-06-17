@@ -1,6 +1,7 @@
-<section class="section hero py-5">
+<section class="section py-5">
+  <div class="container-fluid">
     <div class="row justify-content-center d-flex align-items-center">
-      <div class="col-md-6">
+      <div class="col-sm-12 col-lg-8">
         {{ with .content.title }}
           <h2 class="fs-1 text-primary text-start text-uppercase pb-4">{{ . | markdownify }}</h2>
         {{ end }}
@@ -16,8 +17,9 @@
           {{ end }}
         </div>
       </div>
-      <div class="col-md-6">
+      <div class="col-sm-8 col-lg-6">
         <img class="img-fluid" src="images/hero-image.png">
       </div>
     </div>
+  </div>
 </section>
