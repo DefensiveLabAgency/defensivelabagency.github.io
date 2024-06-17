@@ -1,0 +1,51 @@
+<footer class="shared footer bg-blue-light py-5">
+    <div class="row pb-5 justify-content-center ">
+      <div class="col-12 col-xl-4 text-center text-xl-start pb-4">
+        <h4 class="fs-4 text-uppercase text-primary">{{ .Site.Title }}</h4>
+        <p class="small">{{ .Site.Params.description | markdownify}}</p>
+        <p class="small text-muted">Illustrations by Storyset</p>
+        {{ with .Site.Params.social }}
+        <ul class="d-flex justify-content-xl-start list-unstyled">
+          {{ with .dribbble }}<li class="rounded-circle bg-blue-63 me-2 p-2"><a class="d-flex align-items-center size-16" href="{{ . }}">{{ partial "icons/dribbble.html" }}</a></li>{{ end }}
+          {{ with .instagram }}<li class="rounded-circle bg-blue-63 me-2 p-2"><a class="d-flex align-items-center size-16" href="{{ . }}">{{ partial "icons/instagram.html" }}</a></li>{{ end }}
+          {{ with .facebook }}<li class="rounded-circle bg-blue-63 me-2 p-2"><a class="d-flex align-items-center size-16" href="{{ . }}">{{ partial "icons/facebook.html" }}</a></li>{{ end }}
+          {{ with .twitter }}<li class="rounded-circle bg-blue-63 me-2 p-2"><a class="d-flex align-items-center size-16" href="{{ . }}">{{ partial "icons/twitter.html" }}</a></li>{{ end }}
+        </ul>
+        {{ end }}
+      </div>
+      <div class="col-12 col-xl-2 text-center text-xl-start pb-4">
+        <h5 class="fs-6 text-primary">About us</h5>
+        <ul class="list-unstyled">
+          {{ range .Site.Menus.footer }}
+            <li class="">
+              <a class="small text-decoration-none" href="{{ .URL }}">{{ .Name }}</a>
+            </li>
+          {{ end }}
+        </ul>
+      </div>
+      <div class="col-12 col-xl-3 text-center text-xl-start pb-4">
+        <h5 class="fs-6 text-primary">Location</h5>
+        <ul class="list-unstyled">
+          {{ range .Site.Params.location }}
+            <li class="justify-content-xl-start mb-2 d-flex align-items-center">
+              <span class="text-primary">{{ partial "icons/geo-alt.html" }}</span>
+              <span class="small m-0 ps-2 ">
+                {{ . }}
+              </span>
+            </li>
+          {{ end }}
+        </ul>
+      </div>
+      <div class="col-12 col-xl-3 text-center text-xl-start pb-4">
+        <h5 class="fs-6 text-primary">Contact us</h5>
+        {{ range .Site.Params.contact }}
+          <p class="small mb-1">{{ . }}</p>
+        {{ end }}
+      </div>
+    </div>
+    <div class="row justify-content-center">
+      <div class="col-12 text-center">
+          <p class="small text-muted">Copyright © 2018-{{ now.Year }} Defensive Lab Agency</p>
+      </div>
+    </div>
+</footer>

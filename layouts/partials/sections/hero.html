@@ -1,0 +1,23 @@
+<section class="section hero py-5">
+    <div class="row justify-content-center d-flex align-items-center">
+      <div class="col-md-6">
+        {{ with .content.title }}
+          <h2 class="fs-1 text-primary text-start text-uppercase pb-4">{{ . | markdownify }}</h2>
+        {{ end }}
+        {{ with .content.text }}
+          <p class=" pb-4">{{ . | markdownify }}</p>
+        {{ end }}
+        <div class="text-center">
+          {{ with .content.buttonPrimary }}
+            <a class="btn btn-outline-primary px-4 my-1" href="{{ .url }}">{{ .label }}</a>
+          {{ end }}
+          {{ with .content.buttonSecondary }}
+            <a class="btn btn-outline-primary px-4 my-1" href="{{ .url }}">{{ .label }}</a>
+          {{ end }}
+        </div>
+      </div>
+      <div class="col-md-6">
+        <img class="img-fluid" src="images/hero-image.png">
+      </div>
+    </div>
+</section>

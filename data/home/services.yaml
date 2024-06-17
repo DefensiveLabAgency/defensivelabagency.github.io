@@ -1,0 +1,32 @@
+enabled: true
+id: "services"
+
+content:
+  title: "Our main services"
+  text: ""
+  cards:
+
+    - image: "images/software.png"
+      title: "Software development"
+      text: "We develop custom software solutions to meet the specific needs of NGOs, human rights defenders and civil society organizations. This could include tools for data management or digital investigation."
+
+    - image: "images/reverse.png"
+      title: "Malware analysis"
+      text: "We analyze suspicious mobile applications to understand their functionality and identify potential security threats. This helps protect individuals and organizations from mobile malware."
+
+    - image: "images/expert.png"
+      title: "Expert witness"
+      text: "We provide expert testimony in legal cases related to digital rights abuses. Our technical expertise can help courts and attorneys understand the technical aspects of evidence and make informed decisions."
+
+    - image: "images/training.png"
+      title: "Training"
+      text: "We offer a variety of training courses on digital security and human rights. These courses can help staff members learn how to protect themselves and expand their technical expertise."
+  
+    - image: "images/pentest.png"
+      title: "Penetration testing"
+      text: "We help you identify and fix vulnerabilities in your infrastructure. Penetration testing simulates a cyberattack to see how your systems would respond in a real-world scenario."
+
+    - image: "images/compliance.png"
+      title: "Regulatory compliance"
+      text: "We advise you on how to comply with relevant data protection and privacy regulations. This can help you to protect the privacy of your staff as well as your users."
+

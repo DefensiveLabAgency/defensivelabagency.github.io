@@ -1,1 +1,16 @@
-public
+.eslintcache
+.stylelintcache
+.netlify
+.hugo_build.lock
+.vscode
+hugo_stats.json
+.env
+yarn-error.log
+node_modules/
+public/
+resources/
+notes.txt
+bin/
+tmp/
+.vale.ini
+styles/

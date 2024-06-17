@@ -1,0 +1,15 @@
+enabled: true
+id: "brands"
+
+content:
+  title: "We have worked with them"
+  items:
+    - "images/clients/kobre.png"
+    - "images/clients/ep.svg"
+    - "images/clients/greenpeace.svg"
+    - "images/clients/hrw.jpg"
+    - "images/clients/fld.png"
+    - "images/clients/noyb.svg"
+    - "images/clients/wsj.svg"
+    - "images/clients/amnesty.svg"
+    - "images/clients/pltv.jpg"

@@ -1,0 +1,30 @@
+<section class="section">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-12 col-xl-6">
+        {{ with .content.title }}
+          <h3 id="services" class="fs-1 fw-bold text-center text-primary">{{ . }}</h3>
+        {{ end }}
+        {{ with .content.text }}
+          <p class=" text-center">{{ . }}</p>
+        {{ end }}
+      </div>
+    </div>
+    <div class="row row-cols-1 row-cols-md-3 g-3">
+      {{ range .content.cards }}
+        <div class="col">
+          <div class="card h-100 p-1 shadow-sm">
+            <div class="p-5 ">
+              {{ with .image }}{{ partial "utilities/image-fluid.html" . }}{{ end }}
+            </div>
+            <div class="card-body text-center pb-0">
+              {{ with .title }}<h4 class="card-title text-center text-secondary">{{ . }}</h4>{{ end }}
+              {{ with .text }}<p class="card-text ">{{ . }}</p>{{ end }}
+              {{ with .button }}<a class="btn btn-outline-primary px-4" href="{{ .url }}">{{ .label }}</a>{{ end }}
+            </div>
+          </div>
+        </div>
+      {{ end }}
+    </div>
+  </div>
+</section>

@@ -1,0 +1,11 @@
+enabled: true
+id: "testimonials"
+
+content:
+  title: "Testimonials"
+
+  featured:
+    image: "images/testimonials-awards.png"
+    text: PiRogue and Colander tools from the PiRogue Tool Suite were instrumental for our project in conducting the analysis and identifying privacy violations in the mobile apps. As strategic litigators, it is crucial for us to collect solid evidence of privacy violations to support our arguments during the procedure. The two tools provide a comprehensive setup for mobile app investigations and are open source. PiRogue helps record network traffic and other evidence such as cryptographic activity, SSL keylog files, socket activity, and even a screencast of the app from the viewpoint of the app user. Thanks to Colander, we were able to analyse the entire network traffic of the apps tested and identify suspicious activities. Both tools are intuitive to use and deliver reliable results. As an NGO, we highly value the tool's reliability and accessibility, as it empowers us to investigate mobile apps that would otherwise be very difficult to explore.
+    client: "Ala Krinickyte, Data protection lawyer at noyb"
+

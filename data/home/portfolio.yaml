@@ -1,0 +1,12 @@
+enabled: true
+id: "portfolio"
+
+content:
+  - image: "/images/pirogue-3d.png"
+    #pretitle: "PiRogue Tool Suite"
+    title: "PiRogue Tool Suite"
+    text: "PiRogue tool suite (PTS) provides a platform combining analysis tools, knowledge management, incident response management and artifact management, which allows NGOs with limited resources to equip themselves at a low cost. The project consists of an open-source tool suite that provides a comprehensive mobile device forensics and digital investigation platform."
+
+    buttons: 
+      - label: "Learn more"
+        url: "https://pts-project.org"

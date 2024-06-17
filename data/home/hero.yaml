@@ -1,0 +1,15 @@
+enabled: true
+id: "hero"
+
+content:
+  title: "Digital security and open source software development"
+  text: "Defensive Lab Agency is a French company founded in 2018 by [Esther Onfroy](https://esther.codes) with the objective of providing expert services on digital security and software development to non-governmental organizations and civil society."
+
+  buttonPrimary:
+    label: "Our projects"
+    url: "#projects"
+
+  buttonSecondary:
+    label: "Our services"
+    url: "#services"
+
