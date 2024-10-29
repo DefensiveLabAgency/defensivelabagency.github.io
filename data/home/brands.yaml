@@ -2,12 +2,15 @@ enabled: true
 id: "brands"
 
 content:
-  title: "We have worked with them"
+  title: "They trust us"
   items:
+    - "images/customers/civicert.png"
     - "images/customers/greenpeace.svg"
     - "images/customers/hrw.jpg"
+    - "images/customers/ep.svg"
     - "images/customers/fld.png"
     - "images/customers/noyb.svg"
+    - "images/customers/concordia.svg"
     - "images/customers/wsj.svg"
     - "images/customers/amnesty.svg"
     - "images/customers/edpb.svg"
